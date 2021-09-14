@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+/* header partie une */
+header nav{
+    background-color: midnightblue;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: 8vh;
+    flex-wrap: wrap;
+}
+header nav div a {
+    font-size: 30px;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header .header-start{
+    height: 92vh;
+    background-color: red;
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+header ul li{
+    margin: 0 15px;
+}
+/* header partie deux */
+.header-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.header-start h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.header-start img{
+    height: 250px;
+    /* width: 200px; */
+}
+
+/* Section porftolio */
+.sc1{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5%;
+}
+.sc1 h2{
+    margin-bottom: 0;
+}
+.sc1 img{
+    width: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+/* Section about */
+.sc2{
+    padding: 50px 20px;
+    background-color: red;
+    color: white;
+}
+.sc2 h2{
+   text-align: center;
+   text-transform: uppercase;
+}
+.sc2 .contenu{
+    display: flex;
+    margin: 0 20%;
+}
+.sc2 .contenu p{
+
+    margin: 0 10px;
+}
+/* section about */
+.sc3{
+    margin: 5% 0;
+}
+.sc3 h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.sc3 form{
+    width: 30%;
+    margin: auto;
+
+}
+.sc3 input, 
+.sc3 textarea{
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 25px;
+    resize: none;
+}
+
+.sc3 input::placeholder,
+.sc3 textarea::placeholder
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+.sc3 button{
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-transform: capitalize;
+}
+/* footer */
+
+footer{
+    background-color: midnightblue;
+    text-align: center;
+    color:white;
+    text-transform: capitalize;
+}
+footer a {
+    color: white;
+}
+footer .footer-1{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    
+} 
+footer .footer-1 div{
+    flex: 1;
+}
+
+footer .footer-1 div:nth-of-type(2) ul{
+ display: flex;
+ list-style-type: none;
+ justify-content: center;
+ padding: 0;
+}
+footer .footer-1 div:nth-of-type(2) ul li{
+    margin: 0 15px;
+    border: 1px white solid;
+    border-radius: 50%;
+    height: 25px ; width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-1 div:last-of-type a {
+    text-decoration: none;
+    color: green;
+}
+.footer-2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width:620px) {
+    header nav{
+        height: auto;
+    }
+    .sc2 .contenu{
+        flex-direction: column;
+        margin: 0 5%;
+    }
+    .sc2 .contenu p {
+        flex-direction: column;
+        margin: 5% 0;
+    }
+    .sc3 form{
+        width: 80%;
+    }
+    footer .footer-1{
+        flex-direction: column;
+    }
+}
